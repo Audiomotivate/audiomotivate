@@ -16,5 +16,6 @@
       "dest": "public/index.html"
     }
   ],
+  "installCommand": "npm install --legacy-peer-deps",
   "buildCommand": "npx vite build --outDir public --root client"
 }
