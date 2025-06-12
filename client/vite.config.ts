@@ -4,18 +4,16 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  root: '.',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(__dirname, 'src'),
       '@shared': path.resolve(__dirname, '../shared'),
       '@assets': path.resolve(__dirname, '../attached_assets'),
     },
   },
   build: {
     outDir: '../public',
-    emptyOutDir: true,
-    rollupOptions: {
-      input: path.resolve(__dirname, 'index.html')
-    }
+    emptyOutDir: true
   }
 })
