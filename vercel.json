@@ -6,7 +6,7 @@
       "use": "@vercel/static-build",
       "config": {
         "installCommand": "npm install --legacy-peer-deps",
-        "buildCommand": "cd client && npx vite build --outDir ../public",
+        "buildCommand": "cd client && npx vite build --outDir ../public --emptyOutDir",
         "outputDirectory": "public"
       }
     },
