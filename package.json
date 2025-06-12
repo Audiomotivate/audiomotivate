@@ -5,9 +5,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsx server/index.ts",
-    "build": "cp -r client/src . && cp client/index.html . && vite build --config vite.config.root.ts",
+    "build": "vite build --config vite.config.simple.ts",
     "start": "node server/index.js"
-  },
+  }
+},
   "dependencies": {
     "@hookform/resolvers": "^3.3.0",
     "@neondatabase/serverless": "^0.9.0",
