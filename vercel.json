@@ -4,6 +4,13 @@
     {
       "src": "server/index.ts",
       "use": "@vercel/node"
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
     }
   ],
   "routes": [
@@ -13,10 +20,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "dist/$1"
+      "dest": "dist/index.html"
     }
-  ],
-  "outputDirectory": "dist",
-  "installCommand": "npm install",
-  "buildCommand": "npm run build"
+  ]
 }
