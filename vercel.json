@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "functions": {
-    "server/index.ts": {
-      "runtime": "@vercel/node@3"
+  "builds": [
+    {
+      "src": "server/index.ts",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/api/(.*)",
@@ -12,8 +13,8 @@
     },
     {
       "src": "/(.*)",
-      "dest": "public/$1"
+      "dest": "public/index.html"
     }
   ],
-  "buildCommand": "rm -f vite.config.ts && npx vite build --outDir public --root client && npx esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=server"
+  "buildCommand": "npx vite build --outDir public --root client"
 }
