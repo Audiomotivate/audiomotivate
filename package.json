@@ -4,9 +4,9 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "tsx server/index.ts",
-    "build": "mkdir -p src && cp -r client/src/* src/ 2>/dev/null || cp -r src/* . 2>/dev/null || echo 'Using default structure' && vite build",
-    "start": "node server/index.js"
+  "dev": "tsx server/index.ts",
+  "build": "ls -la && find . -name '*.tsx' -o -name '*.ts' | head -10 && vite build",
+  "start": "node server/index.js"  
   },
     "dependencies": {
     "@hookform/resolvers": "3.10.0",
