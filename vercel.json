@@ -6,7 +6,7 @@
       "use": "@vercel/static-build",
       "config": {
         "installCommand": "npm install --legacy-peer-deps",
-        "buildCommand": "npx vite build --config vite.config.simple.ts",
+        "buildCommand": "mkdir -p src && cp -r client/src/* src/ 2>/dev/null || cp -r src/* . 2>/dev/null || echo 'Using default structure' && npx vite build",
         "outputDirectory": "public"
       }
     },
