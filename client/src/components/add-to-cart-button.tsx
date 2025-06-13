@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Button } from '@/components/ui/button';
+import { Button } from './ui/button';
 import { Product } from '@shared/schema';
-import { useToast } from '@/hooks/use-toast';
+import { useToast } from '../hooks/use-toast';
 import { useQueryClient } from '@tanstack/react-query';
 
 interface AddToCartButtonProps {
