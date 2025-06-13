@@ -1,10 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
 import { Product } from '@shared/schema';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Skeleton } from '@/components/ui/skeleton';
-import { AddToCartButton } from '@/components/add-to-cart-button';
-import { formatCurrency } from '@/lib/utils';
+import { Button } from './ui/button';
+import { Badge } from './ui/badge';
+import { Skeleton } from './ui/skeleton';
+import { AddToCartButton } from './add-to-cart-button';
+import { formatCurrency } from '../lib/utils';
 import { FileText, ArrowRight } from 'lucide-react';
 import { Link } from 'wouter';
 
