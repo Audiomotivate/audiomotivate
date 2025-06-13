@@ -1,11 +1,11 @@
 import { useQuery } from '@tanstack/react-query';
 import { Product } from '@shared/schema';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Skeleton } from '@/components/ui/skeleton';
-import { formatCurrency } from '@/lib/utils';
+import { Button } from './ui/button';
+import { Badge } from './ui/badge';
+import { Skeleton } from './ui/skeleton';
+import { formatCurrency } from '../lib/utils';
 import { ChevronRight } from 'lucide-react';
-import { AddToCartButton } from '@/components/add-to-cart-button';
+import { AddToCartButton } from './add-to-cart-button';
 import { Link } from 'wouter';
 
 function PDFSection() {
