@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { Testimonial } from '@shared/schema';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from './ui/skeleton';
 import { Star, StarHalf } from 'lucide-react';
 
 function TestimonialsSection() {
