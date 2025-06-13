@@ -1,13 +1,11 @@
 import { useQuery } from '@tanstack/react-query';
 import { Product } from '@shared/schema';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Skeleton } from '@/components/ui/skeleton';
-import { SimpleAudioPlayer } from '@/components/ui/simple-audio-player';
-import { formatCurrency } from '@/lib/utils';
-import { ChevronRight, Clock } from 'lucide-react';
-import { Link } from 'wouter';
-import { AddToCartButton } from '@/components/add-to-cart-button';
+import { Button } from './ui/button';
+import { Badge } from './ui/badge';
+import { Skeleton } from './ui/skeleton';
+import { SimpleAudioPlayer } from './ui/simple-audio-player';
+import { formatCurrency } from '../lib/utils';
+import { AddToCartButton } from './add-to-cart-button';
 
 function VideosSection() {
   const { data: videos, isLoading } = useQuery<Product[]>({
