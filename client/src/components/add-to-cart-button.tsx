@@ -91,4 +91,3 @@ export function AddToCartButton({ product, variant = 'primary', className = '' }
     </Button>
   );
 }
-
