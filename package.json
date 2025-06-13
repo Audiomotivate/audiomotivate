@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
   "dev": "tsx server/index.ts",
-  "build": "ls -la && find . -name '*.tsx' -o -name '*.ts' | head -10 && vite build",
+  "build": "ls -la client/ && find ./client -name '*.tsx' -o -name '*.ts' | head -5 && vite build",
   "start": "node server/index.js"  
   },
     "dependencies": {
